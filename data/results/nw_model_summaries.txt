@@ -1,0 +1,172 @@
+====================================================================================================
+ENDOG: d_tsi_mhar_recov_neg | maxlags=10
+====================================================================================================
+
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     d_tsi_mhar_recov_neg   R-squared:                       0.031
+Model:                              OLS   Adj. R-squared:                  0.020
+Method:                   Least Squares   F-statistic:                     2.943
+Date:                  Tue, 16 Dec 2025   Prob (F-statistic):           0.000484
+Time:                          11:44:06   Log-Likelihood:                 182.20
+No. Observations:                  1076   AIC:                            -338.4
+Df Residuals:                      1063   BIC:                            -273.6
+Df Model:                            12                                         
+Covariance Type:                    HAC                                         
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.1975      0.079      2.490      0.013       0.042       0.353
+load_energy_mwh_pt    -1.14e-06   5.32e-07     -2.144      0.032   -2.18e-06    -9.8e-08
+flow_net_mw_ES_PT     -2.05e-05   8.55e-06     -2.398      0.016   -3.72e-05   -3.75e-06
+d_TTF                   -0.0028      0.001     -2.522      0.012      -0.005      -0.001
+d_co2                   -0.0013      0.001     -1.081      0.280      -0.004       0.001
+d_coal                  -0.0002      0.001     -0.156      0.876      -0.003       0.002
+d_load_energy_mwh_es  3.624e-08   2.91e-08      1.246      0.213   -2.08e-08    9.33e-08
+d_load_energy_mwh_fr -1.804e-08   2.77e-08     -0.650      0.516   -7.24e-08    3.63e-08
+d_flow_net_mw_ES_FR  -2.602e-06   5.75e-06     -0.452      0.651   -1.39e-05    8.68e-06
+d_cac_eur_pts        -8.273e-05      0.000     -0.665      0.506      -0.000       0.000
+d_ibex_eur_pts       -5.293e-05      0.000     -0.503      0.615      -0.000       0.000
+d_psi_eur_pts            0.0001      0.000      0.796      0.426      -0.000       0.000
+iberian_exception       -0.0628      0.018     -3.476      0.001      -0.098      -0.027
+==============================================================================
+Omnibus:                      201.667   Durbin-Watson:                   1.742
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2128.278
+Skew:                           0.525   Prob(JB):                         0.00
+Kurtosis:                       9.810   Cond. No.                     2.68e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 10 lags and without small sample correction
+[2] The condition number is large, 2.68e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+====================================================================================================
+ENDOG: d_tsi_mhar_recov_pos | maxlags=10
+====================================================================================================
+
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     d_tsi_mhar_recov_pos   R-squared:                       0.032
+Model:                              OLS   Adj. R-squared:                  0.021
+Method:                   Least Squares   F-statistic:                     2.769
+Date:                  Tue, 16 Dec 2025   Prob (F-statistic):            0.00101
+Time:                          11:44:06   Log-Likelihood:                 359.34
+No. Observations:                  1076   AIC:                            -692.7
+Df Residuals:                      1063   BIC:                            -627.9
+Df Model:                            12                                         
+Covariance Type:                    HAC                                         
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.1444      0.056      2.587      0.010       0.035       0.254
+load_energy_mwh_pt   -7.954e-07   3.73e-07     -2.134      0.033   -1.53e-06   -6.49e-08
+flow_net_mw_ES_PT    -1.588e-05   6.62e-06     -2.400      0.016   -2.88e-05   -2.91e-06
+d_TTF                   -0.0012      0.001     -1.556      0.120      -0.003       0.000
+d_co2                   -0.0005      0.001     -0.530      0.596      -0.003       0.001
+d_coal                  -0.0008      0.001     -0.690      0.490      -0.003       0.002
+d_load_energy_mwh_es  1.763e-08    2.8e-08      0.629      0.529   -3.73e-08    7.25e-08
+d_load_energy_mwh_fr   4.97e-08   1.92e-08      2.594      0.009    1.22e-08    8.73e-08
+d_flow_net_mw_ES_FR    3.88e-07    4.8e-06      0.081      0.936   -9.02e-06    9.79e-06
+d_cac_eur_pts         8.123e-05      0.000      0.703      0.482      -0.000       0.000
+d_ibex_eur_pts          -0.0001   9.31e-05     -1.147      0.251      -0.000    7.57e-05
+d_psi_eur_pts        -2.886e-05      0.000     -0.241      0.810      -0.000       0.000
+iberian_exception       -0.0618      0.017     -3.685      0.000      -0.095      -0.029
+==============================================================================
+Omnibus:                      168.621   Durbin-Watson:                   1.818
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2412.004
+Skew:                           0.140   Prob(JB):                         0.00
+Kurtosis:                      10.329   Cond. No.                     2.68e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 10 lags and without small sample correction
+[2] The condition number is large, 2.68e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+====================================================================================================
+ENDOG: d_tsi_mhar_recov | maxlags=10
+====================================================================================================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       d_tsi_mhar_recov   R-squared:                       0.032
+Model:                            OLS   Adj. R-squared:                  0.022
+Method:                 Least Squares   F-statistic:                     2.030
+Date:                Tue, 16 Dec 2025   Prob (F-statistic):             0.0191
+Time:                        11:44:06   Log-Likelihood:                 373.03
+No. Observations:                1076   AIC:                            -720.1
+Df Residuals:                    1063   BIC:                            -655.3
+Df Model:                          12                                         
+Covariance Type:                  HAC                                         
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.1424      0.063      2.273      0.023       0.020       0.265
+load_energy_mwh_pt   -7.923e-07   4.15e-07     -1.910      0.056   -1.61e-06    2.07e-08
+flow_net_mw_ES_PT    -1.805e-05   7.48e-06     -2.413      0.016   -3.27e-05   -3.39e-06
+d_TTF                   -0.0013      0.001     -1.874      0.061      -0.003       6e-05
+d_co2                   -0.0009      0.001     -0.892      0.372      -0.003       0.001
+d_coal                  -0.0012      0.001     -1.090      0.276      -0.003       0.001
+d_load_energy_mwh_es  6.154e-08   2.68e-08      2.295      0.022    8.99e-09    1.14e-07
+d_load_energy_mwh_fr   4.33e-09   1.97e-08      0.220      0.826   -3.42e-08    4.28e-08
+d_flow_net_mw_ES_FR  -1.707e-07   5.13e-06     -0.033      0.973   -1.02e-05    9.88e-06
+d_cac_eur_pts        -3.906e-05      0.000     -0.387      0.699      -0.000       0.000
+d_ibex_eur_pts       -3.181e-05   8.88e-05     -0.358      0.720      -0.000       0.000
+d_psi_eur_pts        -3.127e-05      0.000     -0.239      0.811      -0.000       0.000
+iberian_exception       -0.0540      0.016     -3.282      0.001      -0.086      -0.022
+==============================================================================
+Omnibus:                      202.006   Durbin-Watson:                   1.728
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4684.999
+Skew:                          -0.018   Prob(JB):                         0.00
+Kurtosis:                      13.222   Cond. No.                     2.68e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 10 lags and without small sample correction
+[2] The condition number is large, 2.68e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+====================================================================================================
+ENDOG: d_tsi_mhar_revar | maxlags=10
+====================================================================================================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       d_tsi_mhar_revar   R-squared:                       0.015
+Model:                            OLS   Adj. R-squared:                  0.004
+Method:                 Least Squares   F-statistic:                     1.857
+Date:                Tue, 16 Dec 2025   Prob (F-statistic):             0.0358
+Time:                        11:44:06   Log-Likelihood:                 266.04
+No. Observations:                1076   AIC:                            -506.1
+Df Residuals:                    1063   BIC:                            -441.3
+Df Model:                          12                                         
+Covariance Type:                  HAC                                         
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.1687      0.066      2.562      0.010       0.040       0.298
+load_energy_mwh_pt   -1.059e-06   4.58e-07     -2.315      0.021   -1.96e-06   -1.62e-07
+flow_net_mw_ES_PT    -1.404e-05   7.91e-06     -1.775      0.076   -2.96e-05    1.47e-06
+d_TTF                  2.74e-05      0.001      0.035      0.972      -0.001       0.002
+d_co2                    0.0005      0.001      0.468      0.640      -0.002       0.003
+d_coal                  -0.0014      0.001     -1.229      0.219      -0.004       0.001
+d_load_energy_mwh_es  4.454e-08   2.72e-08      1.640      0.101   -8.68e-09    9.78e-08
+d_load_energy_mwh_fr   8.88e-09   3.67e-08      0.242      0.809   -6.31e-08    8.08e-08
+d_flow_net_mw_ES_FR  -1.357e-08   6.06e-06     -0.002      0.998   -1.19e-05    1.19e-05
+d_cac_eur_pts         -9.56e-05      0.000     -0.736      0.462      -0.000       0.000
+d_ibex_eur_pts        3.975e-05      0.000      0.319      0.750      -0.000       0.000
+d_psi_eur_pts           -0.0002      0.000     -0.892      0.372      -0.000       0.000
+iberian_exception       -0.0278      0.017     -1.596      0.110      -0.062       0.006
+==============================================================================
+Omnibus:                      151.841   Durbin-Watson:                   1.790
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1842.462
+Skew:                          -0.074   Prob(JB):                         0.00
+Kurtosis:                       9.409   Cond. No.                     2.68e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 10 lags and without small sample correction
+[2] The condition number is large, 2.68e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
